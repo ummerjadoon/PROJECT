@@ -1,0 +1,377 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'poppins', sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+
+
+  nav a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #006738;
+}
+
+.logo {
+    height: 80px;
+}  
+
+.logo_name {
+    height: 60px;
+    align-content: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.box_0 {
+    display: flex;
+    align-items: center;
+}
+
+/* menu container */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.box a {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    height: 50px;
+}
+
+.box a :hover{
+    color: #ffcc00;
+
+}
+
+.box p {
+    font-size: 16px;
+    padding: 5px 1px 0px;
+    font-weight: 600;
+}
+
+button {
+    background: #fff;
+    color: black;
+    border: none;
+    padding: 12px;
+    width: 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+}
+
+
+
+.menu_icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu_icon :hover{
+    color: #ffcc00;
+}
+
+/* Responsive Menu */
+@media (max-width: 1210px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #006738;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.30);
+        padding: 10px;
+        border-radius: 25px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .box p {
+        width: 180px;
+    }
+
+    .box p:hover{
+        color: #ffcc00;
+    }
+
+    .menu .box:hover{
+        background-color: #006738;
+        color: #ffcc00;
+        width: 100%;
+        justify-content: center;
+        border-radius: 25px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+}
+/* navbar end */
+ 
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+    width: 75%; 
+    max-width: 1200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1b5e20; 
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, select, textarea {
+    padding: 1.2rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #1b5e20; 
+}
+
+textarea {
+    resize: none;
+}
+
+.form_button {
+    padding: 1.2rem;
+    background-color: #1b5e20;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c; 
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+@media (max-width: 1200px) {
+    .form-container {
+        width: 90%; 
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .form_button {
+        font-size: 1rem;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #004d2c; 
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+  }
+  
+  .footer_para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 8px;
+    /* line-height: 1.8; */
+  }
+  
+  .footer-section h3 {
+    color: #ffcc00; /* Golden color for headings */
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+  }
+  
+  .subscribe-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border-bottom: 1px solid #0a4201;
+    outline: none;
+    background-color: white;
+    
+  }
+  
+  .footer-button {
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid black !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-button:hover{
+    background-color: #ffcc00 !important;
+    color: white;
+  }
+  
+  .footer-bottom {
+    background-color: #006738;
+    padding: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px;
+  }
+  
+  .footer-bottom a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .footer-section {
+        margin-bottom: 20px;
+    }
+  
+    .subscribe-button {
+        width: auto;
+    }
+  }
+

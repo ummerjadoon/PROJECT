@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayyan Sports Club</title>
+    <link rel="stylesheet" href="/CSS Files/membership.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+   <!-- navbar -->
+   <header>
+    <nav>
+        <!-- logo -->
+        <a class="box_0" href="../HTML files/home.html">
+            <img class="logo" src="/Images/DALL_E_2025-02-25_15.05.55_-_A_modern_and_sleek_sports_club_logo_for__Rayyan_Sports_Club__with_a_transparent_background._The_logo_features_bold__dynamic_typography_with_a_sporty_f-removebg-preview.png" alt="logo">
+            <p class="logo_name">Rayyan Sport's Club</p>
+        </a>
+
+        <!-- navigation menu -->
+        <div class="menu" id="menuList">
+            <div class="box"><a href="../HTML files/home.html">
+                    <p>Home</p>
+                </a></div>
+            <div class="box"><a href="../HTML files/about.html">
+                    <p>About Us</p>
+                </a></div>
+            <div class="box"><a href="../HTML files/membership.html">
+                    <p>Membership</p>
+                </a></div>
+            <div class="box"><a href="../HTML files/Gallery.html">
+                    <p>Gallery</p>
+                </a></div>
+            <div class="box"><a href="../HTML files/facilities.html">
+                    <p>Facilities</p>
+                </a></div>
+            <div class="box"><a href="../HTML files/alumunus.html">
+                    <p>Alumni</p>
+                </a></div>
+            <div class="box"><a href="../HTML files/feedback.html">
+                    <p>Feedback</p>
+                </a></div>
+            <button><a style="color: black;" href="../HTML files/signup.html">Join Now</a></button>
+        </div>
+
+        <!-- menu button -->
+        <div class="menu_icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<!-- navbar end -->
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="https://www.dhakarachi.org/wp-content/uploads/2022/07/Banner-5.jpg" alt="Club Image">
+        <div class="hero-text">
+            <h1>Join Our Club & Elevate Your Game!</h1>
+            <p>Become a Member Today & Enjoy Exclusive Benefits!</p>
+            <a href="#membership" class="btn">Get Membership</a>
+        </div>
+    </div>
+    
+    <!-- Membership Plans Section -->
+    <section id="membership" class="membership-section">
+        <h2>Choose Your Membership Plan</h2>
+    
+        <div class="membership-plans">
+            <div class="plan-card basic">
+                <h3>Basic Plan 🏅</h3>
+                <!-- <p>Access to general facilities and group training sessions.</p> -->
+                <p class="price">$20/month</p>
+                <button class="join-btn">Join Now</button>
+            </div>
+            <div class="plan-card premium">
+                <h3>Premium Plan 🥈</h3>
+                <!-- <p>Includes personal coaching and extended access hours.</p> -->
+                <p class="price">$50/month</p>
+                <button class="join-btn">Join Now</button>
+            </div>
+            <div class="plan-card vip">
+                <h3>VIP Plan 🏆</h3>
+                <!-- <p>All facilities, personal trainer, and VIP lounge access.</p> -->
+                <p class="price">$100/month</p>
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign-Up Form Section -->
+    <section id="signup" class="signup-section">
+        <h2>Sign Up for Membership</h2>
+
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="membershipType">Choose Membership</label>
+                <select id="membershipType">
+                    <option value="basic">Basic - $20/month</option>
+                    <option value="premium">Premium - $50/month</option>
+                    <option value="vip">VIP - $100/month</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+
+        <p id="signupMessage"></p>
+    </section>
+
+    <!-- Footer Start -->
+  <footer class="footer">
+    <div class="footer-container">
+        
+        
+        <div class="footer-section links">
+            <h3>INFORMATION</h3>
+            <ul>
+                <li><a href="../HTML files/home.html">Home</a></li>
+                <li><a href="../HTML files/about.html">About Us</a></li>
+                <li><a href="../HTML files/newsletter.html">Newsletters</a></li>
+                <li><a href="../HTML files/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section links">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="../HTML files/membership.html">Membership</a></li>
+                <li><a href="../HTML files/complaint.html">Complaint</a></li>
+                <li><a href="../HTML files/activity.html">Activities</a></li>
+                <li><a href="../HTML files/signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Terms & Privacy</h3>
+            <ul>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section subscribe">
+          <h3>NEWSLETTER</h3>
+          <input type="text" class="subscribe-input" id="sub-name" placeholder="Email">
+          <button class="footer-button" id="subscribeBtn">Subscribe</button>
+        </div>
+        
+    </div>
+</div>
+</footer>
+    <div class="footer-bottom">
+        <p class="footer_para">© 2025 Rayyan Sport's Karachi. All Rights Reserved.</p>
+
+        <!-- Footer End -->
+
+    <script src="../Js Files/membership.js"></script>
+
+</body>
+</html>
+
