@@ -1,0 +1,486 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+nav a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #006738;
+}
+
+.logo {
+    height: 80px;
+}  
+
+.logo_name {
+    height: 60px;
+    align-content: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.box_0 {
+    display: flex;
+    align-items: center;
+}
+
+/* menu container */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.box a {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    height: 50px;
+}
+
+.box a :hover{
+    color: #ffcc00;
+
+}
+
+.box p {
+    font-size: 16px;
+    padding: 5px 1px 0px;
+    font-weight: 600;
+}
+
+button {
+    background: #fff;
+    color: black;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+}
+
+
+
+.menu_icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu_icon :hover{
+    color: #ffcc00;
+}
+/* Responsive Menu */
+@media (max-width: 1210px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #006738;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.30);
+        padding: 10px;
+        border-radius: 25px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .box p {
+        width: 180px;
+    }
+
+    .box p:hover{
+        color: #ffcc00;
+    }
+
+    .menu .box:hover{
+        background-color: #006738;
+        color: #ffcc00;
+        width: 100%;
+        justify-content: center;
+        border-radius: 25px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+}
+/* navbar end */
+
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    background: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+   
+   
+}
+
+.btn:hover {
+    background: #FFA500;
+}
+
+/* Membership Plans Section */
+.membership-section {
+    color: #0a4201;
+    text-align: center;
+    padding: 30px;
+}
+
+.membership-plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.plan-card {
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    overflow: hidden;
+}
+
+/* Background Images for Each Plan */
+.plan-card.basic {
+    background-image: url('https://media.istockphoto.com/id/1264125564/photo/players-practice-soccer-dribbling-skills-on-training-venue-football-drills-on-school-soccer.jpg?s=612x612&w=0&k=20&c=3kIH9nLTDga7jTDEvsSvBjoUk66h9hahWkrisfgbls8=');
+}
+
+.plan-card.premium {
+    background-image: url('https://images.isspf.com/wp-content/uploads/2021/07/21190457/Football-Coaching-Image-2.webp');
+}
+
+.plan-card.vip {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5696733025981d28a35ef8ab/954e09df-1889-4c41-906d-e857673711d9/new+123+1.jpg');
+}
+
+/* Overlay to improve text contrast */
+.plan-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
+}
+
+/* Hover effect for plan card */
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Plan Title Styling */
+.plan-card h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    z-index: 2; 
+}
+
+/* Price Styling */
+.plan-card .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; 
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+/* Button Styling */
+.plan-card .join-btn {
+    background: #FFD700;
+    color: #0a4201;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.plan-card .join-btn:hover {
+    background: #FFA500;
+    color: #0a4201;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Plan Description Styling (Optional, if you want to show text) */
+.plan-card p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Sign-Up Form Section */
+.signup-section {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-section h2 {
+    margin-bottom: 20px;
+    color: #0a4201;
+}
+
+/* Left Align Labels & Inputs */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #0a4201;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+input::placeholder {
+    text-align: left;
+}
+
+input:focus, select:focus {
+    border-color: #0a4201;
+    box-shadow: 0 0 5px #0a4201;
+}
+
+.submit-btn {
+    background: #0a4201;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #0a4201;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #004d2c;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+  }
+  
+  .footer_para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 8px;
+    /* line-height: 1.8; */
+  }
+  
+  .footer-section h3 {
+    color: #ffcc00; /* Golden color for headings */
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+  }
+  
+  .subscribe-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border-bottom: 1px solid #0a4201;
+    outline: none;
+    background-color: white
+    
+  }
+  
+  .footer-button {
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid black !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-button:hover{
+    background-color: #ffcc00 !important;
+    color: white;
+  }
+  
+  .footer-bottom {
+    background-color: #006738;
+    padding: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px;
+  }
+  
+  .footer-bottom a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .footer-section {
+        margin-bottom: 20px;
+    }
+  
+    .subscribe-button {
+        width: auto;
+    }
+  }
+
+
+   
